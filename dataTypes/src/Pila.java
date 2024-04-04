@@ -11,7 +11,7 @@ public class Pila {
         tope=-1;
     }
     
-    
+    // TODO
     //Metodo pilaLLena, verifica si la pila esta llena :)
     
     
@@ -32,14 +32,20 @@ public class Pila {
             return false;
         } 
     }
-    
-    
-    
-    
-    
-    
-    public void Push(){
-        
+
+    public void push(int elemento){
+        // 1- VERIFICAR SI ESTA LLENO
+        // 2- INCREMENTAR EL TOPE
+        // 3- push
+        if (pilaLLena()) {
+            System.out.println("No se puede añadir elemento, la pila esta llena");
+        }
+        else {
+            System.out.println("Añadiendo elemento");
+            tope ++;
+            pilita[tope] = elemento;
+        }
+
     }
     
    
