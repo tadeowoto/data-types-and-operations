@@ -83,7 +83,7 @@ public class Pila {
         }
         else{
             System.out.println("La pila va desde el  último insertado al primero");
-            for (int i = tam; i >-1; i--) {
+            for (int i = tope; i >-1; i--) {
                 System.out.println(pilita[i]);
             }
             if(pilaLLena())
