@@ -12,5 +12,35 @@ public class Pila {
     }
     
     
+    //Metodo pilaLLena, verifica si la pila esta llena :)
+    
+    
+    public boolean pilaLLena(){
+        
+        if (tam==tope) {
+            return true;
+        }else{
+            return false;
+        } 
+    }
+    
+        public boolean pilaVacia(){
+        
+        if (tope==-1) {
+            return true;
+        }else{
+            return false;
+        } 
+    }
+    
+    
+    
+    
+    
+    
+    public void Push(){
+        
+    }
+    
    
 }
