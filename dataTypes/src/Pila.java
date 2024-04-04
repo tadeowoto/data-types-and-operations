@@ -24,7 +24,7 @@ public class Pila {
         } 
     }
     
-        public boolean pilaVacia(){
+    public boolean pilaVacia(){
         
         if (tope==-1) {
             return true;
@@ -47,6 +47,19 @@ public class Pila {
         }
 
     }
+    
+    public void pop(){
+        // 1- VERIFICAR SI ESTA VACIO
+        // 2- DECREMENTAR EL TOPE
+        if (pilaVacia()) {
+            System.out.println("La pila esta vacía, no se puede eliminar ningún elemento");
+        }
+        else {
+            System.out.println("Eliminando elemento");
+            tope --;
+        }
+    }
+    
     
    
 }
