@@ -60,6 +60,39 @@ public class Pila {
         }
     }
     
+    public void verElemento(){
+        // 1- VERIFICAR SI ESTA VACIO
+        // 2- MOSTRAR ELEMENTO SI NO ESTA VACIO    
+        
+        if(pilaVacia()){
+            System.out.println("No se puede ver el elemento. La pila está vacía");
+            
+        }
+        else{
+            System.out.println(pilita[tope]);
+        }
+        
+        
+    }
+    // metodo soporte para verificar en la consola NO TOMAR COMO PARTE DEL EJERCICIO
+    public void mostrarPila(){
+        
+        if(pilaVacia()){
+            System.out.println("La pila está vacía");
+            
+        }
+        else{
+            System.out.println("La pila va desde el  último insertado al primero");
+            for (int i = tam; i >-1; i--) {
+                System.out.println(pilita[i]);
+            }
+            if(pilaLLena())
+                System.out.println("La Pila está llena :·3");
+ 
+        }
+        
+        
+    }
     
    
 }
